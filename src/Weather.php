@@ -10,9 +10,9 @@ class Weather
 
     protected $key = null;
 
-    public function __construct($key)
+    public function __construct()
     {
-        $this->key = $key;
+        $this->key = config('weather.key');
     }
 
     public function getWeather($city, $extensions = "base", $output = "json")
