@@ -18,5 +18,13 @@
         "psr-4": {
             "Hesunfly\\LaravelWeather\\": "src/"
         }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hesunfly\\LaravelWeather\\ServiceProvider"
+            ]
+        }
     }
 }
