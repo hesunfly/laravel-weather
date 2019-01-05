@@ -10,6 +10,8 @@ class Weather
 
     protected $key = null;
 
+    private $url = "https://restapi.amap.com/v3/weather/weatherInfo";
+
     public function __construct()
     {
         $this->key = config('weather.key');

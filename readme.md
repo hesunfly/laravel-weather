@@ -12,8 +12,6 @@ composer require hesunfly/weather
 
 使用前需要在高德地图开放平台申请天气查询接口的key。
 
-
-
 发布配置文件：
 
 php artsian vendor:publish  --provider="Hesunfly\LaravelWeather\WeatherServiceProvider"
@@ -31,34 +29,28 @@ use Hesunfly\Weather\Weather;
 
 $weather = new Weather('高德地图key');
 
-$weather->getWeather('城市名称');
+$weather->currenct('城市名称');
 ```
 
-1. 获取预告天气：
-
-```
-use Hesunfly\Weather\Weather;
-
-$weather = new Weather('高德地图key');
-
-$weather->getWeather('城市名称', 'all');
-```
-
-1. 获取xml形式的数据：
+2. 获取预告天气：
 
 ```
 use Hesunfly\Weather\Weather;
 
 $weather = new Weather('高德地图key');
 
-$weather->getWeather('城市名称', 'base', 'xml');
+$weather->forecast('城市名称');
 ```
 
-参数说明：
+3. 获取xml形式的数据：
 
-getWeather('城市名称', '返回天气类型：@base:实况天气；@all:预报天气'，'返回数据格式：@json; @xml')
+```
+use Hesunfly\Weather\Weather;
 
+$weather = new Weather('高德地图key');
 
+$weather->currenct('城市名称', 'xml');
+```
 
 ## License
 
