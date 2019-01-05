@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Hesunfly\\LaravelWeather\\ServiceProvider"
+                "Hesunfly\\LaravelWeather\\WeatherServiceProvider"
             ]
         }
     }
