@@ -8,7 +8,7 @@ class Weather
 {
     use Request;
 
-    protected $key = null;
+    private $key = null;
 
     private $url = "https://restapi.amap.com/v3/weather/weatherInfo";
 
