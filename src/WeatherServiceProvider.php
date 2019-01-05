@@ -2,7 +2,7 @@
 
 namespace Hesunfly\LaravelWeather;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class WeatherServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     protected $defer = true;
 
