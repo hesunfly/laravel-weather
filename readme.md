@@ -8,7 +8,7 @@ PHP天气查询扩展组件
 #### 安装
 
 ```
-composer require hesunfly/weather
+composer require hesunfly/laravel-weather
 ```
 
 #### 使用
