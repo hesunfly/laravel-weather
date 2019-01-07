@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'key' => env('WEATHER_KEY', '')
+    'key' => env('WEATHER_KEY', ''),
 ];
+

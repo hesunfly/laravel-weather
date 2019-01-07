@@ -9,13 +9,13 @@ class WeatherServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/weather.php' => config_path('weather.php'),
+            __DIR__.'/../config/weather.php' => config_path('weather.php'),
         ]);
     }
 
     public function register()
     {
-        $this->app->singleton(Weather::class, function(){
+        $this->app->singleton(Weather::class, function () {
             return new Weather(config('weather.key'));
         });
 
